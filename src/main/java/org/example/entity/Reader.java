@@ -17,8 +17,8 @@ public class Reader {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
+
     @ManyToMany
     @JoinTable(
             name = "books_readers",

@@ -11,7 +11,8 @@ import java.util.Objects;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "users", schema = "public",catalog = "postgres")
+@Table(name = "users", schema = "public", catalog = "postgres")
+@PersistenceContext(type = PersistenceContextType.TRANSACTION)
 public class User {
 
     @Id

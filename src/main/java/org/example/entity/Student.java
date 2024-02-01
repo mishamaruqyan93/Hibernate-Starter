@@ -5,13 +5,14 @@ import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.lang.annotation.Documented;
 import java.util.Objects;
 
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "students", schema = "public",catalog = "postgres")
+@Table(name = "students", schema = "public", catalog = "postgres")
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
